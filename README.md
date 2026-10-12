@@ -1,5 +1,3 @@
-# playwright-learnings
-learning Playwright automation
 # Playwright Automation Framework
 
 ## Overview
