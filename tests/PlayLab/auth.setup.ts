@@ -3,7 +3,7 @@
 import {test as setup,Page} from "@playwright/test";
 import { LoginPage } from "./Pages/Login";
 import { Dashboard } from "./Pages/dashboard";
-
+import fs from 'node:fs';
 // async function login(
 //     page: Page,
 //     username :string,
@@ -40,7 +40,9 @@ import { Dashboard } from "./Pages/dashboard";
     // 'Password123'
     // )
 
-    
+    await page.context().storageState({
+    path: 'playwright/.auth/user.json',
+  });
     
  });
  
