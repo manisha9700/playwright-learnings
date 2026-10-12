@@ -1,0 +1,16 @@
+
+# Dependencies
+node_modules/
+
+# Playwright generated files
+test-results/
+playwright-report/
+playwright/.auth/
+
+# Environment secrets
+.env
+.env.*
+!.env.example
+
+# Debug output
+playwright/.cache/
