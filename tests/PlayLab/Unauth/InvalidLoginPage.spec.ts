@@ -3,12 +3,12 @@ import {expect} from '@playwright/test'
 //import { LoginPage } from '../Pages/Login';
 import {test} from '../fixture'
 
-// test.use({
-//     storageState: {
-//         cookies: [],
-//         origins:[]
-//     }
-// })
+test.use({
+    storageState: {
+        cookies: [],
+        origins:[]
+    }
+})
 test.beforeAll('Invalid Login suite',async({})=> {
     console.log('Invalid Login Suite started');
 });
